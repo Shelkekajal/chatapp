@@ -1,7 +1,7 @@
-//const { io } = require('socket.io-client');
-//const socket = io('https://chat_app.onrender.com');
+const { io } = require('socket.io-client');
+const socket = io('https://chat_app.onrender.com');
 
-const socket = io('http://localhost:8000');
+//const socket = io('http://localhost:8000');
 
 
 const form = document.getElementById('send-container');
