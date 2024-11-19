@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    width: 600px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+
+.chat-header {
+    background-color: #ff7043;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-icon {
+    width: 30px;  /* Set desired width */
+    height: 30px; /* Set desired height */
+    margin-right: 10px; /* Space between the image and text */
+}
+
+
+.chat-header h2 {
+    margin: 0;
+}
+
+.close-btn {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message.user-message {
+    justify-content: flex-end;
+}
+
+.message-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message.user-message .message-avatar img {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.message-text {
+    max-width: 70%;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.message.user-message .message-text {
+    background-color: #d9eaff;
+}
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    align-items: center;
+    justify-content: space-between; /* Ensures proper spacing between input and button */
+}
+
+#messageInp {
+    flex: 1;
+    width:542px;
+    padding: 12px; /* Increased padding for a larger input area */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures consistent padding and width */
+}
+
+.chat-input button {
+    background-color: #ff7043;
+    border: none;
+    padding: 10px; /* Adjusted padding for consistent size */
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for better visibility */
+    position: relative;
+    top: -2px; /* Adjust this value to position the button vertically */
+}
+
+.chat-input button img {
+    width: 18px; /* Reduced size for better alignment */
+    height: 18px;
+}
+#send-container {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
